@@ -9,21 +9,29 @@
 </head>
 <body>
   <header>
-    <h1><!-- TODO: Lomake-sivun H1 --></h1>
+    <h1>Täytä lomake!</h1>
     <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+      <ul>
+        <li><a href="index.html" >Etusivu</a></li>
+        <li><a href="form.html">Lomake</a></li>
+        <li><a href="table.html">Taulukko</a></li>
+        <li><a href="image.html">Kuva</a></li>
+      </ul>
     </nav>
   </header>
   <main>
-    <!-- TODO: Luo <form>:
-         - lisää label for + id parit
-         - järkevät type-arvot (email, number, tms.)
-         - method ja action attribuutit
-         - submit-painike
-    -->
+    <form method="get" action="index.html">
+      <label for="Number">Puh numero:</label><br>
+      <input type="text" id="Number" name="Numero" value="2056"><br>
+      <label for="Email">Sähköposti:</label><br>
+      <input type="email" id="Email" name="Sähköposti" value="Mika.Mannila@gmail.com"><br>
+      <input type="submit" value="Lähetä">
+
+    </form>
+
   </main>
   <footer>
-    <!-- TODO: Footer -->
+    <p>Viikkotehtävä 1, Juho-Pekka Salo</p>
   </footer>
 </body>
 </html>
